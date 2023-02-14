@@ -12,7 +12,6 @@ import {
   Container,
   Flex,
   Button,
-  Image,
   Menu,
   MenuButton,
   MenuList,
@@ -21,20 +20,19 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import Link from "next/link";
+import Image from "next/image";
+import Logo from"../../../public/Logo.png"
+
 
 export default function Header() {
   return (
       <Box boxShadow={"lg"}>
-        <Container maxWidth={1750}>
+        <Container maxWidth={1400}>
           <SimpleGrid
             templateColumns={{ sm: "repeat(2, 1fr)", lg: "repeat(3, 1fr)" }}
           >
             <Box>
-              <Image
-                src={"/Logo.png"}
-                alt={"panaverse-logo"}
-                height={"120"}
-              ></Image>
+              <Image src={Logo} alt="panaverse-logo" height={200} width={200}></Image>
             </Box>
             <Flex
               color={"black"}
@@ -53,7 +51,7 @@ export default function Header() {
             <Box pt={9} display={{ base: "none", lg: "initial" }}>
               <Button
                 size={"lg"}
-                colorScheme={"gray"}
+                bg={"#e9b3e9"}
                 float={"right"}
                 fontSize={{ base: "15px", lg: "20px" }}
                 fontWeight={"semibold"}
