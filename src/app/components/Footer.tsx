@@ -1,5 +1,4 @@
 import {
-  ChakraProvider,
   Box,
   SimpleGrid,
   Container,
@@ -13,7 +12,6 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <ChakraProvider>
       <Box bg={"gray.700"} textColor="white">
         <Container maxWidth={1700} paddingY="30px">
           <SimpleGrid
@@ -67,6 +65,5 @@ export default function Footer() {
           </SimpleGrid>
         </Container>
       </Box>
-    </ChakraProvider>
   );
 }

@@ -1,5 +1,5 @@
 // <container> component provides max width property. Max width a box can have.
-// Boxes inside a boc can be aligned horizontally by wrappin in <Flex>, <Grid> or <SimpleGrid>
+// Boxes inside a box can be aligned horizontally by wrapping in <Flex>, <Grid> or <SimpleGrid>
 
 // We keep our images in public directory
 // We can name anything in import statement of image. We will have to provide this name in <image> tag as a variable.
@@ -13,16 +13,22 @@ import {
   Flex,
   Button,
   Image,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  IconButton,
 } from "@chakra-ui/react";
-import { ChakraProvider } from "@chakra-ui/react";
+import { HamburgerIcon } from "@chakra-ui/icons";
 import Link from "next/link";
 
 export default function Header() {
   return (
-    <ChakraProvider>
       <Box boxShadow={"lg"}>
         <Container maxWidth={1750}>
-          <SimpleGrid columns={{ sm: 1, md: 1, lg: 3 }}>
+          <SimpleGrid
+            templateColumns={{ sm: "repeat(2, 1fr)", lg: "repeat(3, 1fr)" }}
+          >
             <Box>
               <Image
                 src={"/Logo.png"}
@@ -55,9 +61,27 @@ export default function Header() {
                 Login/Signup
               </Button>
             </Box>
+
+            <Box display={{ base: "initial", lg: "none" }} pt="15px">
+              <Menu>
+                <MenuButton
+                  float={"right"}
+                  as={IconButton}
+                  aria-label="Options"
+                  icon={<HamburgerIcon />}
+                  variant="outline"
+                />
+                <MenuList>
+                  <MenuItem>Home</MenuItem>
+                  <MenuItem>Syllabus</MenuItem>
+                  <MenuItem>Explore</MenuItem>
+                  <MenuItem>About</MenuItem>
+                  <MenuItem>Contact us</MenuItem>
+                </MenuList>
+              </Menu>
+            </Box>
           </SimpleGrid>
         </Container>
       </Box>
-    </ChakraProvider>
   );
 }

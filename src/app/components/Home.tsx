@@ -1,9 +1,8 @@
-import { Box, ChakraBaseProvider, Heading, Text } from "@chakra-ui/react";
+import { Box, Heading, Text } from "@chakra-ui/react";
 import React from "react";
 
 export default function Home() {
   return (
-    <ChakraBaseProvider>
       <Box p={{base:"50px", sm:"75px", lg:"100px"}}>
         <Box pt={"45px"}>
           <Heading
@@ -58,6 +57,5 @@ export default function Home() {
           </Text>
         </Box>
       </Box>
-    </ChakraBaseProvider>
   );
 }

@@ -7,9 +7,8 @@ import Home from './components/Home'
 export default function page() {
   return (
     <div>
-      <Header/>
+      
       <Home/>
-      <Footer/>
     </div>
   )
 }
