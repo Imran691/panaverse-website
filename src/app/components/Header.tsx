@@ -43,10 +43,10 @@ export default function Header() {
               display={{ base: "none", lg: "flex" }}
             >
               <Link href={"/"}>Home</Link>
-              <Link href={"/"}>Syllabus</Link>
-              <Link href={"/"}>Explore</Link>
-              <Link href={"/"}>About</Link>
-              <Link href={"/"}>Contact</Link>
+              <Link href={"/syllabus"}>Syllabus</Link>
+              <Link href={"/explore"}>Explore</Link>
+              <Link href={"/about"}>About</Link>
+              <Link href={"/contact"}>Contact</Link>
             </Flex>
             <Box pt={9} display={{ base: "none", lg: "initial" }}>
               <Button

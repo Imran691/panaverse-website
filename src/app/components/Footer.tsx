@@ -23,7 +23,7 @@ export default function Footer() {
             templateColumns={{sm: "repeat(1, 1fr)", lg: "repeat(4, 1fr)" }}>
             <Box>
               <Heading fontSize={"20px"}> About us</Heading>
-              <Text align={{lg:"left", base:"left"}} pr={{ base: "0", lg: "30px" }} pt={10} fontSize="15px">
+              <Text align={{lg:"left", base:"left"}} pr={{ base: "0", lg: "20px" }} pt={10} fontSize="15px">
                 Future of the web is Web-03, Metaverse and edge computing.
                 Panaverse DAO is a movement to spred these technologies
                 globally. It is a community of Web-03 and Metaverse developers,
@@ -32,7 +32,7 @@ export default function Footer() {
             </Box>
             <Box>
               <Heading fontSize={"20px"}>Useful Links</Heading>
-              <Grid pt={"50px"} fontSize="15px">
+              <Grid pt={"50px"} fontSize="15px" pr={"30px"}>
                 <Link href={"/"}>Home</Link>
                 <Link href={"/"}>About</Link>
                 <Link href={"/"}>Syllabus</Link>

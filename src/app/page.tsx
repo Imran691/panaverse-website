@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
-import Home from "./components/Home";
+import Banner from "./components/Banner";
 
 export default function page() {
   return (
     <div>
-      <Home/>
+      <Banner/>
     </div>
   );
 }
