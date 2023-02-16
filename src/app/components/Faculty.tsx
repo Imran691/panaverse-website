@@ -17,9 +17,9 @@ export default function Faculty() {
       <Box>
         <Container maxW={1400}>
           <Center>
-            <Heading>Faculty Members</Heading>
+            <Heading pb={"20px"}>Faculty Members</Heading>
           </Center>
-          <Flex flexDirection={"row"}>
+          <Flex flexDirection={{base:"column", lg:"row"}}>
            {facultyData.map( (fac) => (
             <Box key={fac.id}>
                 <center>
