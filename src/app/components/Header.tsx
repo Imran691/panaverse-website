@@ -43,9 +43,9 @@ export default function Header() {
               display={{ base: "none", lg: "flex" }}
             >
               <Link href={"/"}>Home</Link>
+              <Link href={"/about"}>About</Link>
               <Link href={"/syllabus"}>Syllabus</Link>
               <Link href={"/explore"}>Explore</Link>
-              <Link href={"/about"}>About</Link>
               <Link href={"/contact"}>Contact</Link>
             </Flex>
             <Box pt={9} display={{ base: "none", lg: "initial" }}>
@@ -70,11 +70,11 @@ export default function Header() {
                   variant="outline"
                 />
                 <MenuList>
-                  <MenuItem>Home</MenuItem>
-                  <MenuItem>Syllabus</MenuItem>
-                  <MenuItem>Explore</MenuItem>
-                  <MenuItem>About</MenuItem>
-                  <MenuItem>Contact us</MenuItem>
+                  <MenuItem><Link href={"/"}>Home</Link></MenuItem>
+                  <MenuItem><Link href={"/about"}>About</Link></MenuItem>
+                  <MenuItem><Link href={"/syllabus"}>Syllabus</Link></MenuItem>
+                  <MenuItem><Link href={"/explore"}>Explore</Link></MenuItem>
+                  <MenuItem><Link href={"/contact"}>Contact us</Link></MenuItem>
                 </MenuList>
               </Menu>
             </Box>
