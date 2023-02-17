@@ -19,7 +19,7 @@ export default function Footer() {
           py={"10px"}
           fontSize={{ base: "15px", lg: "20px" }}
           fontWeight="semibold"
-          textAlign={{ base: "center", lg: "left" }}
+          textAlign= {{base:"left", lg:"center"}}
           templateColumns={{ sm: "repeat(1, 1fr)", lg: "repeat(4, 1fr)" }}
         >
           <Box>
@@ -27,7 +27,7 @@ export default function Footer() {
             <Text
               align={{ lg: "left", base: "left" }}
               pr={{ base: "0", lg: "20px" }}
-              pt={10}
+              pt={{base:3, lg:8}}
               fontSize="15px"
             >
               Future of the web is Web-03, Metaverse and edge computing.
@@ -38,7 +38,7 @@ export default function Footer() {
           </Box>
           <Box>
             <Heading fontSize={"20px"}>Useful Links</Heading>
-            <Grid pt={"50px"} fontSize="15px" pr={"30px"}>
+            <Grid pt={{base:3, lg:8}} fontSize="15px" pr={"30px"}>
               <Link href={"/"}>Home</Link>
               <Link href={"/about"}>About</Link>
               <Link href={"/syllabus"}>Syllabus</Link>
@@ -48,7 +48,7 @@ export default function Footer() {
           </Box>
           <Box>
             <Heading fontSize={"20px"}>Follow us</Heading>
-            <Grid pt={"50px"} fontSize="15px">
+            <Grid pt={{base:3, lg:8}} fontSize="15px">
               <Link href={"https://web.facebook.com/groups/piaic"}>
                 Facebook
               </Link>
@@ -72,7 +72,7 @@ export default function Footer() {
           </Box>
           <Box>
             <Heading fontSize={"20px"}>Conatct us</Heading>
-            <Grid pt={"50px"} fontSize="15px">
+            <Grid pt={{base:3, lg:8}} fontSize="15px">
               <Link href={"/"}>+92 21 123464899</Link>
               <Link href={"/"}>abc@panaverse.com</Link>
               <Link href={"/"}>Karachi, Pakistan</Link>

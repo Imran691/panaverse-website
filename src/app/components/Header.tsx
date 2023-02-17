@@ -32,7 +32,7 @@ export default function Header() {
             templateColumns={{ sm: "repeat(2, 1fr)", lg: "repeat(3, 1fr)" }}
           >
             <Box>
-              <Image src={Logo} alt="panaverse-logo" height={200} width={200}></Image>
+              <Image src={Logo} alt="panaverse-logo" height={150} width={150}></Image>
             </Box>
             <Flex
               color={"black"}
@@ -51,11 +51,12 @@ export default function Header() {
             <Box pt={9} display={{ base: "none", lg: "initial" }}>
               <Link href={"https://portal.piaic.org/"}>
               <Button
-                size={"lg"}
+                size={"md"}
                 bg={"#e9b3e9"}
                 float={"right"}
-                fontSize={{ base: "15px", lg: "20px" }}
+                fontSize={{ base: "10px", lg: "15px" }}
                 fontWeight={"semibold"}
+                mb={"30px"}
               >
                 Login/Signup
               </Button>

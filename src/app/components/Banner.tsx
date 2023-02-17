@@ -10,23 +10,23 @@ export default function Banner() {
       <Box>
         <Container maxW={1400}>
           <Flex
-            pt={{ lg: "150px", base: "30px" }}
-            pb={100}
-            px={{ lg: "40px", base: "5px" }}
+            pt={{ lg: "100px", base: "20px" }}
+            // pb={100}
+            px={{ lg: "40px", base: "10px" }}
             display={{ lg: "flex", base: "grid" }}
           >
             <Box flexBasis={"50%"} px={5}>
-              <Heading pb={18} fontSize={40} textAlign={"left"}>
+              <Heading pb={10} fontSize={30} textAlign={"left"}>
                 Prepare yourself for next generation of internet with Panaverse
               </Heading>
               <Text
-                pb={18}
-                fontSize={18}
+                pb={10}
+                fontSize={15}
                 textAlign={"justify"}
               >
                 One year Panaverse DAO earn while you learn programme.
                 Consolidating Web-3, Metaverse, Artificial Intelligence (AI),
-                Cloud, Edge, Ambient Computing and Internet Of Things(IOT)
+                Cloud, Edge, Ambient Computing and Internet Of Things(IOT).
               </Text>
               <Button
                 size={"md"}
@@ -49,7 +49,7 @@ export default function Banner() {
       <Box>
         <Container maxW={1400}>
           <Flex
-            pt={{ lg: "150px", base: "30px" }}
+            pt={{ lg: "100px", base: "20px" }}
             pb={100}
             px={{ lg: "40px", base: "5px" }}
             display={{ lg: "flex", base: "grid" }}
@@ -58,12 +58,12 @@ export default function Banner() {
               <Image src={Pic2} alt="pic-2" height={800} width={800}></Image>
             </Box>
             <Box flexBasis={"50%"} px={5}>
-              <Heading pb={18} fontSize={40} textAlign={"left"}>
+              <Heading pb={18} fontSize={30} textAlign={"left"}>
                 Programme of studies
               </Heading>
               <Text
                 pb={18}
-                fontSize={18}
+                fontSize={15}
                 textAlign={"justify"}
               >
                 This curriculum is intended for brginners who want to learn
