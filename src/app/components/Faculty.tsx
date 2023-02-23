@@ -10,11 +10,13 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { facultyData } from "./FacultyData";
+import { RevealList } from  'next-reveal'
 
 export default function Faculty() {
   return (
     <>
       <Box>
+        <RevealList interval={60} delay={500}  className='flex flex-wrap items-center justify-center'>
         <Container maxW={1400}>
           <Center>
             <Heading pb={"20px"}>Faculty Members</Heading>
@@ -31,6 +33,7 @@ export default function Faculty() {
            ))}
           </Flex>
         </Container>
+        </RevealList>
       </Box>
     </>
   );
