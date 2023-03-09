@@ -1,7 +1,7 @@
 import { Box, Container, Heading, Text, Flex, Button } from "@chakra-ui/react";
 import Image from "next/image";
-import Pic1 from "../../../public/pic-1.png";
-import Pic2 from "../../../public/pic-2.png";
+import Pic1 from "../public/pic-1.png";
+import Pic2 from "../public/pic-2.png";
 import Home from "./Home";
 import React from "react";
 import { RevealWrapper } from "next-reveal";

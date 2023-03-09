@@ -2,11 +2,11 @@
 import { Box, Container, Flex, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import React from "react";
-import Home from "../components/Home";
+import Home from "../../../components/Home";
 import President from "../../../public/president.png";
 import Logo from "../../../public/Logo.png";
 import Zia from "../../../public/zia.png";
-import Faculty from "../components/Faculty";
+import Faculty from "../../../components/Faculty";
 import { RevealWrapper } from "next-reveal";
 
 export default function page() {

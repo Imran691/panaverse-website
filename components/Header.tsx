@@ -21,7 +21,7 @@ import {
 import { HamburgerIcon } from "@chakra-ui/icons";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "../../../public/Logo.png";
+import Logo from "../public/Logo.png";
 
 export default function Header() {
   return (
